@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./css/MainPage.css";
+import Mealcard from "./Mealcard";
 function MainPage() {
   const [data, setData] = useState();
   const [search, setSearch] = useState();
@@ -15,7 +16,7 @@ function MainPage() {
     const jsonData = await get.json();
     setData(jsonData.meals);
   };
-  console.log(data);
+  //console.log(data);
   return (
     <>
       <div className="contaner">
@@ -24,7 +25,9 @@ function MainPage() {
           <button onClick={myFun}>Search</button>
         </div>
 
-        <div></div>
+        <div>
+          <Mealcard detail={data} />
+        </div>
       </div>
     </>
   );

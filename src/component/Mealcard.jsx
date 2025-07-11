@@ -1,7 +1,21 @@
-function Mealcard() {
+import "./css/Mealcard.css";
+function Mealcard({ detail }) {
+  console.log(detail);
   return (
     <>
-      <h4>mead card</h4>
+      <div className="meals">
+        {!detail
+          ? ""
+          : detail.map((curItem, index) => {
+              return (
+                <div key={index}>
+                  <img src={curItem.strMealThumb} />
+                  <p>{curItem.strmeal}</p>
+                  <button>Recipe</button>
+                </div>
+              );
+            })}
+      </div>
     </>
   );
 }
