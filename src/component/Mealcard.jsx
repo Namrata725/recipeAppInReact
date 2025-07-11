@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./css/Mealcard.css";
 function Mealcard({ detail }) {
   console.log(detail);
@@ -11,7 +12,9 @@ function Mealcard({ detail }) {
                 <div key={index}>
                   <img src={curItem.strMealThumb} />
                   <p>{curItem.strmeal}</p>
-                  <button>Recipe</button>
+                  <NavLink to={`/${curItem.idMeal}`}>
+                    <button>Recipe</button>
+                  </NavLink>
                 </div>
               );
             })}
