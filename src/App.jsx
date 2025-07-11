@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import MainPage from "./MainPage";
-import Mealinfo from "./Mealinfo";
+import Mealinfo from "./component/MealInfo";
+import Mealinfo from "./component/MainPage";
 
 function App() {
   return (
