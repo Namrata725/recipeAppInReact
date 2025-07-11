@@ -1,0 +1,46 @@
+
+.contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  font-family: sans-serif;
+}
+
+.Sbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Sbar input[type="text"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.Sbar input[type="text"]:focus {
+  outline: none;
+  border-color: #00796b; /* Matching your theme */
+}
+
+.Sbar button {
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  background-color: #00796b; /* Theme color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Sbar button:hover {
+  background-color: #005f56;
+}
