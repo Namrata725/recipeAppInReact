@@ -1,0 +1,57 @@
+.mealInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
+  margin: 2rem auto;
+  align-items: flex-start;
+}
+
+.mealInfo img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mealContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mealContent h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.mealContent h3 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.mealContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.meal-loading,
+.meal-error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  color: #888;
+}
